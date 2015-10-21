@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "f3b80e93-fccd-2548-cb70-ce57b7db7bff",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "f3b80e93-fccd-2548-cb70-ce57b7db7bff" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "f3b80e93-fccd-2548-cb70-ce57b7db7bff" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "91BDFD2C-31F6-45E3-9F10-A2FF5B3A2760",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "f3b80e93-fccd-2548-cb70-ce57b7db7bff" : "HKDesignableView.git\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DemoViewRender",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/DemoViewRender.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/haikieu\/HKDesignableView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f3b80e93-fccd-2548-cb70-ce57b7db7bff"
+    }
+  ]
+}
