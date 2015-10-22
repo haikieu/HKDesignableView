@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5BG-nx-62r" customClass="DragableSampleView">
-                                <rect key="frame" x="55" y="85" width="127" height="111"/>
+                                <rect key="frame" x="77" y="70" width="127" height="111"/>
                                 <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="dragable" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-Ov-90s" customClass="DesignableSampleView">
-                                <rect key="frame" x="191" y="250" width="218" height="99"/>
+                                <rect key="frame" x="123" y="250" width="193" height="110"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.38236545929999999" blue="0.1890838745" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>

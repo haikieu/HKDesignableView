@@ -131,11 +131,11 @@
 				F283E2A21BD735E700E48B08 /* LaunchScreen.storyboard */,
 				F283E2A51BD735E700E48B08 /* Info.plist */,
 				F283E2941BD735E700E48B08 /* Supporting Files */,
-				F283E3071BD78FFA00E48B08 /* DesignableSampleView.h */,
 				F283E30A1BD7900500E48B08 /* DesignableSampleView.xib */,
+				F283E3071BD78FFA00E48B08 /* DesignableSampleView.h */,
 				F283E3081BD78FFA00E48B08 /* DesignableSampleView.m */,
-				F283E30C1BD7914800E48B08 /* DragableSampleView.h */,
 				F283E30F1BD7916000E48B08 /* DragableSampleView.xib */,
+				F283E30C1BD7914800E48B08 /* DragableSampleView.h */,
 				F283E30D1BD7914800E48B08 /* DragableSampleView.m */,
 			);
 			path = DemoViewRender;

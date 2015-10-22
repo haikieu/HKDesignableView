@@ -20,22 +20,6 @@
     return NO;
 }
 
--(BOOL)isDeviceTarget
-{
-#if TARGET_IPHONE_SIMULATOR
-    return YES;
-#endif
-    return NO;
-}
-
--(BOOL)isSimulatorTarget
-{
-#if TARGET_OS_IOS
-    return YES;
-#endif
-    return NO;
-}
-
 -(instancetype)initWithCoder:(NSCoder *)aDecoder //Called by device / simulator only
 {
     self = [super initWithCoder:aDecoder];
@@ -46,7 +30,7 @@
     return self;
 }
 
--(instancetype)initWithFrame:(CGRect)frame  //Called by device / simulator / interface builder
+-(instancetype)initWithFrame:(CGRect)frame  //Called by your code / interface builder
 {
     self = [super initWithFrame:frame];
     if(self)
@@ -87,7 +71,7 @@
 
 
 
--(void)awakeFromNib //Called on device/simulator
+-(void)awakeFromNib //Called on device/simulator only
 {
     [super awakeFromNib];
     [self prepareForInterfaceBuilder];
@@ -95,7 +79,7 @@
 
 #pragma mark - Rendered on Interface Builder
 
--(void)prepareForInterfaceBuilder   //Called in interface builder only
+-(void)prepareForInterfaceBuilder   //Called on interface builder only
 {
     [super prepareForInterfaceBuilder];
     [self prepareInterface];

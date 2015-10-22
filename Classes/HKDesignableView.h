@@ -12,8 +12,6 @@ IB_DESIGNABLE
 @interface HKDesignableView : UIView
 
 @property(nonatomic,readonly)BOOL isInterfaceBuilderTarget;
-@property(nonatomic,readonly)BOOL isDeviceTarget;
-@property(nonatomic,readonly)BOOL isSimulatorTarget;
 
 @property (strong, nonatomic,readonly)UIView *contentView;
 
