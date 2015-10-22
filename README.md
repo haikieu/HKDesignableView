@@ -1,7 +1,25 @@
 # HKDesignableView
 A backbone of UIView which built on IBDesignable and IBInspectable, avaiable from XCode 6
 
+####Designable View
+![HKDesignableView](https://raw.githubusercontent.com/haikieu/HKDesignableView/master/Pictures/Component1.png "Use designable view on your storyboard easily")
 
+####Designable & Dragable View
+![HKDesignableView](https://raw.githubusercontent.com/haikieu/HKDesignableView/master/Pictures/Conponent2.png "Use designable view on your storyboard easily")
+
+####Easily design view visually on your story board
+![HKDesignableView](https://raw.githubusercontent.com/haikieu/HKDesignableView/master/Pictures/Story-board.png "Use designable view on your storyboard easily")
+
+####Quick begin step by steps
+=================================
+#####Step 1: Setup on xib file
+![HKVideoPlayer](https://raw.githubusercontent.com/haikieu/HKDesignableView/master/Pictures/Guide-Step1.png "Use designable view on your storyboard easily")
+
+#####Step 2: Setup on xib file
+![HKVideoPlayer](https://raw.githubusercontent.com/haikieu/HKDesignableView/master/Pictures/Guide-Step2.png.png "Use designable view on your storyboard easily")
+
+#####Step 3: Inherit the base class and just implement it
+![HKVideoPlayer](https://raw.githubusercontent.com/haikieu/HKDesignableView/master/Pictures/Guide-Step3.png.png "Use designable view on your storyboard easily")
 
 ====================
 The MIT License (MIT)
