@@ -46,17 +46,12 @@
     return self;
 }
 
--(instancetype)initWithFrame:(CGRect)frame  //Called by device / simulator / interface builder only
+-(instancetype)initWithFrame:(CGRect)frame  //Called by device / simulator / interface builder
 {
     self = [super initWithFrame:frame];
     if(self)
     {
-        [self loadContentView];
-
-        if(self.isSimulatorTarget||self.isDeviceTarget) //This doesn't need called in interface builder target
-        {
-            [self loadContentConstraint];
-        }
+        [[self loadContentView] loadContentConstraint];
     }
     return self;
 }
@@ -66,7 +61,7 @@
 -(instancetype)loadContentView
 {
     _contentView = [[NSBundle bundleForClass:[self class]] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil].firstObject;
-    
+
     [self addSubview:_contentView];
     
     return self;
@@ -90,17 +85,20 @@
     return self;
 }
 
+
+
 -(void)awakeFromNib //Called on device/simulator
 {
-    [self prepareInterface];
+    [super awakeFromNib];
+    [self prepareForInterfaceBuilder];
 }
 
 #pragma mark - Rendered on Interface Builder
 
 -(void)prepareForInterfaceBuilder   //Called in interface builder only
 {
-    [self loadContentConstraint];
-    [self awakeFromNib];
+    [super prepareForInterfaceBuilder];
+    [self prepareInterface];
 }
 
 -(instancetype)prepareInterface
@@ -113,21 +111,5 @@
     self.contentView.backgroundColor = self.backgroundColor;
     return self;
 }
-
-#pragma mark - Draw on Interface Builder
-
- - (void)drawRect:(CGRect)rect
-{
-    if(self.isInterfaceBuilderTarget)
-    {
-        //Do some stuffs here
-    }
-    else
-    {
-        [super drawRect:rect];
-    }
-}
-
-
 
 @end

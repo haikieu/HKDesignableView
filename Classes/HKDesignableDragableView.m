@@ -9,13 +9,6 @@
 #import "HKDesignableDragableView.h"
 #import <UIKit/UIKit.h>
 
-@interface HKDesignableView(HKDesignableDragableView)
-
--(instancetype)prepareInterface;
-
-@end
-
-
 @interface HKDesignableDragableView ()
 
 @property (strong, nonatomic) IBOutlet UIPanGestureRecognizer *panGesture;
@@ -27,8 +20,9 @@
 
 @implementation HKDesignableDragableView
 
--(void)awakeFromNib
+-(void)prepareForInterfaceBuilder
 {
+    [super prepareForInterfaceBuilder];
     [self prepareGesture:self.dragable];
 }
 
@@ -54,27 +48,6 @@
     CGFloat x = originPoint.x + newPoint.x;
     CGFloat y = originPoint.y + newPoint.y;
     view.center = CGPointMake(x, y);
-    
-    return self;
-}
-
--(instancetype)moveViewFromPoint:(CGPoint)originPoint toPoint:(CGPoint)newPoint
-{
-    [self moveView:self FromPoint:originPoint toPoint:newPoint];
-    
-    return self;
-}
-
--(instancetype)saveLocation
-{
-    self.previousLocation = self.originLocation;
-    self.originLocation = CGPointZero;
-    
-    return self;
-}
-
--(instancetype)revertLocation
-{
     
     return self;
 }
@@ -126,6 +99,26 @@
         }
     }
     
+}
+
+-(instancetype)moveViewFromPoint:(CGPoint)originPoint toPoint:(CGPoint)newPoint
+{
+    [self moveView:self FromPoint:originPoint toPoint:newPoint];
+    
+    return self;
+}
+
+-(instancetype)saveLocation
+{
+    self.previousLocation = self.originLocation;
+    self.originLocation = CGPointZero;
+    
+    return self;
+}
+
+-(instancetype)revertLocation
+{
+    return self;
 }
 
 @end
